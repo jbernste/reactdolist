@@ -15,7 +15,7 @@ class App extends Component {
     todos: []
   }
   componentDidMount() {
-    axios.get('https://jsonplaceholder.typicode.com/todos?_limit=20')
+    axios.get('https://jsonplaceholder.typicode.com/todos?_limit=3')
     .then(res => this.setState({ todos: res.data}))
   }
   //Toggle complete
