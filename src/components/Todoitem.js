@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import Proptypes from 'prop-types';
-import { tsImportEqualsDeclaration } from '@babel/types';
-import leftPad from 'left-pad';
 
 export class TodoItem extends Component {
     getStyle = () => {
@@ -12,7 +10,7 @@ export class TodoItem extends Component {
             textAlign:'left',
             textDecoration: this.props.todo.completed ?
             'line-through' : 'none'
-        
+
         }
     }
     markComplete =(e) => {
@@ -44,5 +42,5 @@ const btnStyle = {
     borderRadius: '20%',
     curser: 'pointer',
     float: 'right'
-}    
+}
 export default TodoItem

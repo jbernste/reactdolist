@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Route} from 'react-router-dom';
 import Todos from './components/Todos'
 import AddToDo from './components/AddToDo'
 import Header from './components/layout/Header'
 import About from './components/pages/About'
-import uuid from 'uuid';
 import axios from 'axios';
 
 class App extends Component {
